@@ -22,11 +22,12 @@ namespace Palindrome_Project
 
                 input = Console.ReadLine();                                 // Take in input
                  
-
+                if(input != "-1")
+                { 
                 Console.WriteLine(palindrome(input) ?                       // Print Palindrome if it is a palindrome, else, print it is not.
                     "It is a palindrome." 
                     : "It is NOT a palindrome");
-
+                }
             } while(input != "-1");                                         // Repeat until user quits
 
 
